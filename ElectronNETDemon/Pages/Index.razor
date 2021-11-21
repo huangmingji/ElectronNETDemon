@@ -1,0 +1,18 @@
+﻿@inject MessageService _message
+@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+
+<Button Type="primary" OnClick="Success">Hello World!</Button>
+
+@code {
+    private async Task Success()
+    {
+        await _message.Success("This is a success message");
+    }
+}
