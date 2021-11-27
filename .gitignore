@@ -32,3 +32,4 @@ msbuild.err
 msbuild.wrn
 logs/
 files/
+node_modules/
